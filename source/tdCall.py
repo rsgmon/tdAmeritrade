@@ -1,13 +1,7 @@
-import argparse
 import asyncio
 import aiohttp
 import async_timeout
-import pandas as pd
 import copy
-pd.set_option('display.width', 1000)
-# pd.set_option('precision', 2)
-
-from . import credentials
 
 class tdCall(object):
     base_url = "https://api.tdameritrade.com/v1/"
