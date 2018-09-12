@@ -10,7 +10,7 @@ class TesttdCallGetData(unittest.TestCase):
 
     def test_get_td_data_only_credentials(self):
         td_call = tdCall.tdCall(credentials.access_token)
-        td_call.get_td_data()
+        print(td_call.get_td_data())
 
     def test_get_quote(self):
         td_call = tdCall.tdCall(credentials.access_token, symbols=['SPY'],

@@ -15,7 +15,7 @@ class tdCall(object):
     def get_configs(self):
         """test"""
         if not self.raw_configs:
-            return self.quotes
+            return [self.quotes]
         else:
             if len(self.raw_configs) == 1 and isinstance(self.raw_configs, dict):
                 return [self.set_single_config(self.raw_configs)]
