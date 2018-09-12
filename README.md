@@ -14,7 +14,7 @@ Libraries to help develop applications that consume tdAmeritrade's API.
          
 
 ## Introduction
-Welcome. The purpose of this repository it to provide a library of functions, classes, and modules to help you more to quickly develop applications that consume tdAmeritrade's API. 
+Welcome. The purpose of this project it to provide a library of functions, classes, and modules to help you more to quickly develop applications that consume tdAmeritrade's API. 
 
 This readme will explain some background and experience with tdAmeritrade's API, and then the background and use of this project.
 
@@ -25,7 +25,7 @@ The best place to learn about the TDAmeritrade API is at the [TDAmeritrade Devel
 #### Our experience
 The [TDAmeritrade Developer Site](https://developer.tdameritrade.com/) documents two application types. 
 
-The first type is your own local application. So for example you want to options data. Follow [Simple Auth for Local Apps](https://developer.tdameritrade.com/content/simple-auth-local-apps) to get your first access key. Once completed, you'll have an access key and a refresh key. Save the refresh key in a secure place. Then you can repeatedly get access keys using the refesh key.  
+The first type is your own local application. So for example you want to get options data. Follow [Simple Auth for Local Apps](https://developer.tdameritrade.com/content/simple-auth-local-apps) to get your first access key. Once completed, you'll have an access key and a refresh key. Save the refresh key in a secure place. Then you can repeatedly get access keys using the refesh key.  
 
 The second application type is where you are running a server for either your own or someone else's use. Depending on the use you may need to get approval from TD.
 
@@ -45,22 +45,15 @@ _authServer.py_ is really just a duplicate from td's developer site. I left it i
 
 Go to [Simple Auth for Local Apps](https://developer.tdameritrade.com/content/simple-auth-local-apps) to find out how to get a key.
 
+```
 from tdAmeritrade import tdCall
 td_call = tdCall.tdCall([your access key])
 print(td_call.get_td_data())
-
+```
 
 ## Contributions
+Accepting all contributions! You may notice that not all of TDAmeritrade's API routes are included. Well that's because we haven't had to use them so far. Build or update a route!
 
+Or often the data comes in a messy nested glob. We have helper functions that handle the data once received and we want even add complete reports. Build one!
 
-
-
-
-
-
-
-
-
-## Current Status
-trd
 
