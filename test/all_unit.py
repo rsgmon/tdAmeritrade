@@ -1,5 +1,5 @@
 import unittest
-from source import tdCall, credentials
+from tdAmeritrade import tdCall, credentials
 
 
 class TesttdCallGetData(unittest.TestCase):
@@ -7,6 +7,10 @@ class TesttdCallGetData(unittest.TestCase):
         td_call = tdCall.tdCall(credentials.access_token, symbols=['SPY', 'AGG'], configs=[{'route':'h', 'periodType': 'daily'}])
         config = td_call.get_configs()
         self.assertEqual(type(config), list)
+
+    def test_get_td_data_only_credentials(self):
+        td_call = tdCall.tdCall(credentials.access_token)
+        td_call.get_td_data()
 
     def test_get_quote(self):
         td_call = tdCall.tdCall(credentials.access_token, symbols=['SPY'],
