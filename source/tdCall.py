@@ -13,6 +13,7 @@ class tdCall(object):
         else: self.symbols = symbols
 
     def get_configs(self):
+        """test"""
         if not self.raw_configs:
             quotes = self.quotes
         else:
