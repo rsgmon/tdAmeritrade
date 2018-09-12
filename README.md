@@ -1,5 +1,7 @@
 # tdAmeritrade
-Libraries to help develop applications that consume tdAmeritrade's API. **Uses asynchronous libraries. Requires python 3.5 or higher.**
+Libraries to help develop applications that consume tdAmeritrade's API.
+
+**Uses asynchronous libraries. Requires python 3.5 or higher.** 
 
 ## Contents
     Introduction
@@ -14,15 +16,18 @@ Libraries to help develop applications that consume tdAmeritrade's API. **Uses a
 ## Introduction
 Welcome. The purpose of this repository it to provide a library of functions, classes, and modules to help you more to quickly develop applications that consume tdAmeritrade's API. 
 
-This readme will explain some background the tdAmeritrade's API, and then the design and use of this repository.
+This readme will explain some background and experience with tdAmeritrade's API, and then the background and use of this project.
 
 ## Background
 ### TDAmeritrade API
-Obviously the best place to learn about the TDAmeritrade API is at the [TDAmeritrade Developer Site](https://developer.tdameritrade.com/). Basically there are two types applications which the site documents. 
+The best place to learn about the TDAmeritrade API is at the [TDAmeritrade Developer Site](https://developer.tdameritrade.com/). 
 
-The first type is your own local application. So for example you just want to pull data and analyze it. In [Simple Auth for Local Apps](https://developer.tdameritrade.com/content/simple-auth-local-apps) it walks you through how to get your first access key. Once you have gone through those steps you'll have an access key and a refresh key. Be sure to save the refresh key in a secure place. Then you can repeatedly get access keys when needed.  
+#### Our experience
+The [TDAmeritrade Developer Site](https://developer.tdameritrade.com/) documents two application types. 
 
-The second type is where you are running a server for either your own or someone else's use. Depending on the use you may need to get approval from TD.
+The first type is your own local application. So for example you want to options data. Follow [Simple Auth for Local Apps](https://developer.tdameritrade.com/content/simple-auth-local-apps) to get your first access key. Once completed, you'll have an access key and a refresh key. Save the refresh key in a secure place. Then you can repeatedly get access keys using the refesh key.  
+
+The second application type is where you are running a server for either your own or someone else's use. Depending on the use you may need to get approval from TD.
 
 ### tdAmeritrade Library (this project)
 Initially this library was built for the first reason: we wanted to pull and analyze data from TD. So **currently** this library makes one assumption.
